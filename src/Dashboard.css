@@ -1,0 +1,170 @@
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #0f8b8d, #1f6f8b); /* Adjust background */
+}
+
+/* Sidebar for icons */
+.sidebar {
+  width: 200px;  /* Adjust width as needed */
+  background: rgba(0, 0, 0, 0.2); /* Transparent black for visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  /* position: fixed; */
+  height: 100vh;
+}
+
+/* Sidebar Icons */
+.sidebar-icon {
+  font-size: 24px;
+  color: white;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar-icon:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1; /* Takes remaining space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10; 
+  width: 100%;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+
+/* Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; /* Adjust column sizes */
+  gap: 20px;
+  width: 90%;
+  margin-top: 60px;
+  max-width: 1200px;
+}
+
+/* Charts */
+.chart-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.chart-label{
+  justify-items: center;
+  position: absolute;
+  text-align: center;
+}
+
+/* Pie Chart */
+.center-column {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+.right-column {
+  /* height: 250px; */
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  width: 110%;
+
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between charts */
+  margin-left: 10px; 
+}
+
+.small-chart {
+  background: rgba(12, 7, 7, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  min-height: 160px; /* Ensure enough space */
+  position: relative; /* Ensures label positioning works */
+  padding-bottom: 20px; /* Space between charts */
+  margin-bottom: 30px;
+}
+
+/* Logout Button Styling */
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.logout-btn:hover {
+  background: black;
+}
+
+button:active {
+  background-color: #990000; /* Even darker red */
+  transform: scale(0.95); /* Slight shrink effect */
+}
+.chart-wrapper {
+  display: flex;
+  justify-content: space-between; /* Ensures charts don't overlap */
+  gap: 20px; /* Adds space between charts */
+}
+ 
+.footer{
+  padding: 30px;
+}
+
+@media screen and (max-width: 1536px) {
+  .dashboard-container {
+    height: auto; /* Adjusts dynamically */
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .dashboard-container {
+    height: auto;
+    padding: 5px;
+    flex-direction: column; /* Stacks items vertically */
+  }
+}

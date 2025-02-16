@@ -1,0 +1,123 @@
+/* Apply gradient background to the full page */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Outer container */
+.container {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2d545e, #173c4e);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section h2 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a4f5f, #0f3342);
+}
+
+.right-section p {
+  color: white;
+  font-size: 18px;
+}
+
+/* OTP Input Field */
+.input-field {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background: #193c4e;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Focus Effect */
+.input-field:focus {
+  background: #1c4f61;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Resend OTP Section */
+.resend-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 280px;
+  margin-top: 10px;
+}
+
+.resend-text {
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.resend-text:hover {
+  color: #2a9d8f;
+}
+
+/* Validate Button */
+.button {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #26a65b, #1e8449);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Hover Effect */
+.button:hover {
+  background: linear-gradient(135deg, #1e8449, #167c3b);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Click Effect */
+.button:active {
+  transform: scale(0.98);
+}

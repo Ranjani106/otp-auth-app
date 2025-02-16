@@ -1,0 +1,150 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full-page background with gradient */
+body {
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Page container */
+.page-container {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Centered form box */
+.inner-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 750px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.2));
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side with input */
+.left-side {
+  width: 50%;
+  padding: 20px;
+}
+
+/* Right side with text */
+.right-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Input Field */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+}
+
+/* Input focus effect */
+input:focus {
+  outline: none;
+  border: 2px solid #26a65b;
+  box-shadow: 0px 0px 10px rgba(38, 166, 91, 0.5);
+}
+
+/* Button */
+button {
+  background: linear-gradient(to bottom, #26a65b, #1e8449);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+button:hover {
+  background: linear-gradient(to bottom, #1e8449, #145a32);
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 20px;
+}
+.chart-container {
+  width: 100%;
+  margin: auto;
+  /* margin-bottom: 10px; */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, #027A65, #1768AC, #3F51B5);
+  padding: 20px;
+}
+
+.sidebar {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.chart-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
