@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "/src/otpPage.css";
+import "/src/OtpPage.css";
 
 const OtpPage = () => {
   const [otp, setOtp] = useState("");
